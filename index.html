@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="shortcut icon" href="img/ford.png" />
+    <title>Revenda Avenida</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- QUADRO SUPERIOR: EMPRESA -->
+      <div class="row bg-primary text-white py-3">
+        <div class="col-sm-12">
+          <img
+            src="img/ford.png"
+            alt="Logo Ford"
+            width="120"
+            class="float-left mt-4 mr-3"
+          />
+          <h1>Revenda Avenida - Veículos em Promoção</h1>
+          <h4>Taxa Zero, Preços Especiais e Parcelamento</h4>
+        </div>
+      </div>
+
+      <!-- QUADRO CENTRAL: VEÍCULOS -->
+      <div class="row m-4 text-primary">
+        <div class="col-sm-3">
+          <h4>Modelos em Promoção</h4>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="carro"
+                id="ka"
+                checked
+              />Ka
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="carro"
+                id="fiesta"
+              />Fiesta
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="carro"
+                id="focus"
+              />Focus
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <img alt="Foto Carro" class="img-fluid" id="imgCarro" />
+        </div>
+        <div class="col-sm-4">
+          <h4>Escolha os opcionais:</h4>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="ckPintura"
+              />Pintura Metálica
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="ckAlarme"
+              />Alarme
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUADRO INFERIOR: PREÇO -->
+      <div class="row bg-info text-white py-4">
+        <div class="col-sm-12">
+          <h3>
+            Preço do Veículo
+            <span id="outPreco"></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/herbie.js"></script>
+  </body>
+</html>
