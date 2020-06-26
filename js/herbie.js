@@ -22,9 +22,10 @@ const opcionais = [
 window.addEventListener("load", () => {
   modeloCarro[0].checked = true;
   imgCarro.src = `img/${carroSelecionado.modelo}.png`;
-  pintura.checked = false;
-  alarme.checked = false;
   carroSelecionado.opcionais = [];
+  OpcionaisCheckbox.forEach((item) => {
+    item.checked = false;
+  });
   carregarPrecoTotal(carroSelecionado);
 });
 
